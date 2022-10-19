@@ -1,0 +1,62 @@
+.bg {
+  background-color: white;
+  font-size: 50px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 60px;
+  width: 100%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  // border-bottom: 1px solid #333;
+}
+.navItem {
+  margin-left: 40px;
+  font-size: 16px;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  .navitemicon {
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+  }
+  a {
+    color: #000;
+    text-decoration: none !important;
+  }
+  a:hover {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  }
+}
+.navItem:hover {
+  transform: translateY(-2px);
+}
+.navleft {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .icontxt {
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 40px;
+  }
+}
+.navright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  box-sizing: border-box;
+  padding-left: 200px;
+}
+.icon {
+  width: 70px;
+  height: 100%;
+  background-image: url(../../assets/logo.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
