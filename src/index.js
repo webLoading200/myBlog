@@ -1,11 +1,10 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import { socket } from "./api/socket";
 import "./index.css";
 import { dev } from "./config/index";
 import { BrowserRouter as Router } from "react-router-dom";
 import App from "./page/app";
-
+import 'lib-flexible';
 import { createRoot } from 'react-dom/client';
 const container = document.getElementById('root');
 const root = createRoot(container);
