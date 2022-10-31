@@ -1,6 +1,5 @@
 import React from "react";
 import { Route, Redirect } from "react-router-dom";
-import ReactDOM from "react-dom";
 function sleep() {
   return new Promise((res, rej) => {
     setTimeout(() => {

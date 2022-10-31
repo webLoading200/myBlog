@@ -40,4 +40,21 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <script>
+    //页面加载完毕后设置html字体大小
+    window.onload = function () {
+      //获取标准rem单位
+      document.documentElement.style.fontSize =
+        (document.documentElement.clientWidth / 1920) * 100 + "px";
+    };
+    let timer = null;
+    window.onresize = function () {
+      clearTimeout(timer);
+      timer = setTimeout(() => {
+        let size = (document.documentElement.clientWidth / 1920) * 100 + "px";
+        console.log(size);
+        document.documentElement.style.fontSize = size;
+      }, 1000);
+    };
+  </script>
 </html>

@@ -1,8 +1,7 @@
 import "./app.scss";
 
-import React, { Component, Suspense, useContext } from "react";
+import React, { Component, Suspense } from "react";
 // import styles from "./app.module.scss";
-import { Route } from "react-router-dom";
 import Home from "./home/home";
 // import About from "./about/about";
 import Nav from "../conponents/nav/nav";

@@ -1,8 +1,13 @@
-import axios from "../config.js";
+import INTER_FACE from "../config.js";
 export const uploadMd = (data) => {
-  return axios.post("/upload/uploadMd", data, {
-    headers: {
-      "Content-Type": "multipart/form-data;boundary=" + new Date().getTime(),
+  return INTER_FACE.post("upload/uploadMd", data, {
+    "Content-type": "multipart/form-data",
+  });
+};
+export const getMdJson = (url) => {
+  return INTER_FACE.get("upload/getMd", {
+    params: {
+      url: url,
     },
   });
 };

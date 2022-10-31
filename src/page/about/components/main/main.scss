@@ -1,5 +1,14 @@
 .about-main {
-  width: 50vw;
-  min-height: calc(100vh - 100px);
+  width: 60vw;
   background-color: aqua;
+  min-height: calc(100vh - 100px);
+}
+.about-main-main {
+  width: 60vw;
+  float: left;
+  padding: 0px 40px 80px 40px;
+  box-sizing: border-box;
+  height: calc(100vh - 100px);
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
